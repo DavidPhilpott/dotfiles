@@ -17,16 +17,16 @@ printf "Archiving work project '$PROJECT_NAME'."
 printf "\n\nArchive Trello board with the name 'Work-$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove Evernote / Tusk notebook with the name 'Work-$PROJECT_NAME' to 'Archived' stack.\n"
+printf "\n\nMove Evernote / Tusk notebook in the 'Work' stack with the name '$PROJECT_NAME' to 'Archived' stack.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove Dropbox folder with the name 'Work-$PROJECT_NAME' to 'Archived' folder.\n"
+printf "\n\nMove Dropbox folder inside the 'work' folder with the name '$PROJECT_NAME' to 'archived' folder.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nRename Bitwarden folder with the name 'Work-$PROJECT_NAME' to 'zArchived-Work-$PROJECT_NAME'.\n"
+printf "\n\nRename Bitwarden folder with the name 'work-$PROJECT_NAME' to 'archived-work-$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove folder on personal machine with the name 'Work-$PROJECT_NAME' in /home/ to /home/archived/.\n"
+printf "\n\nMove folder on personal machine with the name '$PROJECT_NAME' from /home/work/ to /home/archived/.\n"
 read -s -p "Press Enter when complete."
 
 exit 0
