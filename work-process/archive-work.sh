@@ -14,7 +14,7 @@ fi
 
 printf "Archiving work project '$PROJECT_NAME'."
 
-printf "\n\nArchive Trello board with the name 'Work-$PROJECT_NAME'.\n"
+printf "\n\nArchive Trello board with the name 'work-$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nMove Evernote / Tusk notebook in the 'Work' stack with the name '$PROJECT_NAME' to 'Archived' stack.\n"
