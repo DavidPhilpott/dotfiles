@@ -17,7 +17,7 @@ fi
 
 printf "Archiving work project '$PROJECT_NAME'."
 
-printf "\n\nArchive Trello board with the name 'work-$PROJECT_NAME'.\n"
+printf "\n\nArchive Trello list in the 'Work' board with the name 'To Do - $PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nMove Evernote / Tusk notebook in the 'Work' stack with the name '$PROJECT_NAME' to 'Archived' stack.\n"
@@ -30,6 +30,9 @@ printf "\n\nRename Bitwarden folder with the name 'work-$PROJECT_NAME' to 'archi
 read -s -p "Press Enter when complete."
 
 printf "\n\nMove folder on personal machine with the name '$PROJECT_NAME' from /home/work/ to /home/archived/.\n"
+read -s -p "Press Enter when complete."
+
+printf "\n\Delete firefox profile with the name '$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
 exit 0
