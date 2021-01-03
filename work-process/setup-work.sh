@@ -51,6 +51,7 @@ printf "∙ 'Strict' Enhanced Tracking Protection\n"
 printf "∙ Set 'Always' option for 'Do Not Track'\n"
 printf "∙ Disable all firefox data collection\n"
 printf "∙ Enable HTTPs Mode\n"
+printf "∙ Enable 'privacy.resistFingerprinting' in about:config\n"
 read -s -p "Press Enter when complete."
 
 exit 0
