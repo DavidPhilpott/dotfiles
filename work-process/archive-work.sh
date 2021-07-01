@@ -32,14 +32,19 @@ read -s -p "Press Enter when complete."
 printf "\n\nMove folder on personal machine with the name '$PROJECT_NAME' from /home/work/ to /home/archived/.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\Delete firefox profile with the name '$PROJECT_NAME'.\n"
+printf "\n\nDelete firefox profile with the name '$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\Remove personal shell config content relating to '$PROJECT_NAME'.\n"
-printf "vim ~/.zshrc"
+printf "\n\nRemove personal shell config content relating to '$PROJECT_NAME'.\n"
+printf "vim ~/.zshrc\n"
 read -s -p "Press Enter when complete." 
 
-printf "\n\Move Boox folder for '$PROJECT_NAME' from 'Work' to 'Archived'.\n"
+printf "\n\nRemove personal aws config content relating to '$PROJECT_NAME'.\n"
+printf "vim ~/.aws/config\n"
+printf "vim ~/.aws/credentials\n"
+read -s -p "Press Enter when complete." 
+
+printf "\n\nMove Boox folder for '$PROJECT_NAME' from 'Work' to 'Archived'.\n"
 read -s -p "Press Enter when complete."
 
 exit 0

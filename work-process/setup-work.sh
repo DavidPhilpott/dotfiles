@@ -54,7 +54,7 @@ printf "∙ Enable HTTPs Mode\n"
 printf "∙ Enable 'privacy.resistFingerprinting' in about:config\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\Create folder named '$PROJECT_NAME' in the 'Work' folder on the Boox tablet.\n"
+printf "\n\nCreate folder named '$PROJECT_NAME' in the 'Work' folder on the Boox tablet.\n"
 read -s -p "Press Enter when complete." 
 
 exit 0
