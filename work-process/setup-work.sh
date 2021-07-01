@@ -21,9 +21,9 @@ lower_dash_project_name=${lower_project_name// /_}
 printf "Setting up new work project for '$project_name'."
 
 printf "\n\nCreate new Trello list in the 'Work' board with the name 'To Do - $project_name'.\n"
-read -s -p "Press Enter when complete."
+trello add-list -b Work -l "To Do - ${project_name}" -p top -v  
 
-printf "\n\nCreate new Evernote / Tusk notebook in the 'work' stack with the name '$project_name'.\n"
+printf "\nCreate new Notion page in the 'Work' page with the name '$project_name'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nCreate new Dropbox folder with the name '$lower_dash_project_name' in the 'work' folder.\n"

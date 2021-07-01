@@ -23,7 +23,7 @@ printf "Archiving work project '$project_name'."
 printf "\n\nArchive Trello list in the 'Work' board with the name 'To Do - $project_name'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove Evernote / Tusk notebook in the 'Work' stack with the name '$project_name' to 'Archived' stack.\n"
+printf "\n\nMove Notion 'Work' sub-page with the name '$project_name' to 'Work/Archived'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nMove Dropbox folder inside the 'work' folder with the name '$lower_dash_project_name' to the 'work/archived/' folder.\n"
