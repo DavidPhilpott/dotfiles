@@ -47,4 +47,7 @@ read -s -p "Press Enter when complete."
 printf "\n\nMove Boox folder for '$PROJECT_NAME' from 'Work' to 'Archived'.\n"
 read -s -p "Press Enter when complete."
 
+printf "\n\nMove ssh keys from ~/.ssh relating to '$PROJECT_NAME' into Bitwarden.\n"
+read -s -p "Press Enter when complete."
+
 exit 0
