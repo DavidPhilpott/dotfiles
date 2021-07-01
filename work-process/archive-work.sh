@@ -32,8 +32,8 @@ read -s -p "Press Enter when complete."
 printf "\n\nRename Bitwarden folder with the name 'work-$lower_dash_project_name' to 'archived-work-$lower_dash_project_name'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove folder on personal machine with the name '$lower_dash_project_name' from  ~/git/work to  ~/git/archived/work/.\n"
-read -s -p "Press Enter when complete."
+printf "\n\nMove folder on personal machine with the name '$lower_dash_project_name' from ~/git/work to ~/git/archived/work/.\n"
+mv -i $HOME/git/work/$lower_dash_project_name $HOME/git/archived/work/
 
 printf "\n\nDelete firefox profile with the name '$project_name'.\n"
 read -s -p "Press Enter when complete."

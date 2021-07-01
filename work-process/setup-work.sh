@@ -33,7 +33,7 @@ printf "\n\nCreate new Bitwarden folder with the name 'work-$lower_dash_project_
 read -s -p "Press Enter when complete."
 
 printf "\n\nCreate new folder on personal machine with the name '$lower_dash_project_name' in ~/git/work.\n"
-mkdir -p ~/git/work/$lower_dash_project_name
+mkdir -p $HOME/git/work/$lower_dash_project_name
 
 printf "\nCreate firefox profile with the name '$project_name'.\n"
 read -s -p "Press Enter when complete."
