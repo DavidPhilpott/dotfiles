@@ -27,9 +27,9 @@ printf "\n\nMove Notion 'Work' sub-page with the name '$project_name' to 'Work/A
 read -s -p "Press Enter when complete."
 
 printf "\n\nMove Dropbox folder inside the 'work' folder with the name '$lower_dash_project_name' to the 'work/archived/' folder.\n"
-read -s -p "Press Enter when complete."
+mv -i $HOME/Dropbox/work/$lower_dash_project_name $HOME/Dropbox/work/archived/
 
-printf "\n\nRename Bitwarden folder with the name 'work-$lower_dash_project_name' to 'archived-work-$lower_dash_project_name'.\n"
+printf "\nRename Bitwarden folder with the name 'work-$lower_dash_project_name' to 'archived-work-$lower_dash_project_name'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nMove git folder on personal machine from '~/git/work/$lower_dash_project_name/' to '~/git/work/archived/$lower_dash_project_name/'.\n"

@@ -27,9 +27,9 @@ printf "\nCreate new Notion page in the 'Work' page with the name '$project_name
 read -s -p "Press Enter when complete."
 
 printf "\n\nCreate new Dropbox folder with the name '$lower_dash_project_name' in the 'work' folder.\n"
-read -s -p "Press Enter when complete."
+mkdir -p $HOME/Dropbox/work/$lower_dash_project_name
 
-printf "\n\nCreate new Bitwarden folder with the name 'work-$lower_dash_project_name'.\n"
+printf "\nCreate new Bitwarden folder with the name 'work-$lower_dash_project_name'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nCreate new folder for storing repos on personal machine: '~/git/work/$lower_dash_project_name/.\n"
