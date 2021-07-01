@@ -35,4 +35,11 @@ read -s -p "Press Enter when complete."
 printf "\n\Delete firefox profile with the name '$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
+printf "\n\Remove personal shell config content relating to '$PROJECT_NAME'.\n"
+printf "vim ~/.zshrc"
+read -s -p "Press Enter when complete." 
+
+printf "\n\Move Boox folder for '$PROJECT_NAME' from 'Work' to 'Archived'.\n"
+read -s -p "Press Enter when complete."
+
 exit 0
