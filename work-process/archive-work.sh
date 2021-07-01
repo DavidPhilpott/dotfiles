@@ -26,14 +26,14 @@ read -s -p "Press Enter when complete."
 printf "\n\nMove Evernote / Tusk notebook in the 'Work' stack with the name '$project_name' to 'Archived' stack.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove Dropbox folder inside the 'work' folder with the name '$lower_dash_project_name' to 'archived' folder.\n"
+printf "\n\nMove Dropbox folder inside the 'work' folder with the name '$lower_dash_project_name' to the 'work/archived/' folder.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nRename Bitwarden folder with the name 'work-$lower_dash_project_name' to 'archived-work-$lower_dash_project_name'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove folder on personal machine with the name '$lower_dash_project_name' from ~/git/work to ~/git/archived/work/.\n"
-mv -i $HOME/git/work/$lower_dash_project_name $HOME/git/archived/work/
+printf "\n\nMove git folder on personal machine from '~/git/work/$lower_dash_project_name/' to '~/git/work/archived/$lower_dash_project_name/'.\n"
+mv -i $HOME/git/work/$lower_dash_project_name $HOME/git/work/archived/
 
 printf "\nDelete firefox profile with the name '$project_name'.\n"
 read -s -p "Press Enter when complete."
@@ -47,7 +47,7 @@ printf "vim ~/.aws/config\n"
 printf "vim ~/.aws/credentials\n"
 read -s -p "Press Enter when complete." 
 
-printf "\n\nMove Boox folder for '$project_name' from 'Work' to 'Archived'.\n"
+printf "\n\nMove Boox folder for '$project_name' from 'Work/' to 'Work/Archived/'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nMove ssh keys from ~/.ssh relating to '$project_name' into Bitwarden.\n"
