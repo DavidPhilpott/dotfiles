@@ -32,10 +32,10 @@ read -s -p "Press Enter when complete."
 printf "\n\nCreate new Bitwarden folder with the name 'work-$lower_dash_project_name'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nCreate new folder on personal machine with the name '$lower_dash_project_name' in /home/git/work.\n"
-read -s -p "Press Enter when complete."
+printf "\n\nCreate new folder on personal machine with the name '$lower_dash_project_name' in ~/git/work.\n"
+mkdir -p ~/git/work/$lower_dash_project_name
 
-printf "\n\nCreate firefox profile with the name '$project_name'.\n"
+printf "\nCreate firefox profile with the name '$project_name'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nInstall the following firefox addons to profile '$project_name' and enable in private windows.\n"
