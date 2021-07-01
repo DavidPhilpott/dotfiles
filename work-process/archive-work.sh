@@ -15,6 +15,9 @@ then
       exit 1
 fi
 
+LOWER_PROJECT_NAME=${PROJECT_NAME,,}
+LOWER_DASH_PROJECT_NAME=${LOWER_PROJECT_NAME// /_}
+
 printf "Archiving work project '$PROJECT_NAME'."
 
 printf "\n\nArchive Trello list in the 'Work' board with the name 'To Do - $PROJECT_NAME'.\n"
@@ -23,13 +26,13 @@ read -s -p "Press Enter when complete."
 printf "\n\nMove Evernote / Tusk notebook in the 'Work' stack with the name '$PROJECT_NAME' to 'Archived' stack.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove Dropbox folder inside the 'work' folder with the name '$PROJECT_NAME' to 'archived' folder.\n"
+printf "\n\nMove Dropbox folder inside the 'work' folder with the name '$LOWER_DASH_PROJECT_NAME' to 'archived' folder.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nRename Bitwarden folder with the name 'work-$PROJECT_NAME' to 'archived-work-$PROJECT_NAME'.\n"
+printf "\n\nRename Bitwarden folder with the name 'work-$LOWER_DASH_PROJECT_NAME' to 'archived-work-$LOWER_DASH_PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nMove folder on personal machine with the name '$PROJECT_NAME' from /home/git/work/ to /home/git/archived/work/.\n"
+printf "\n\nMove folder on personal machine with the name '$LOWER_DASH_PROJECT_NAME' from /home/git/work/ to /home/git/archived/work/.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nDelete firefox profile with the name '$PROJECT_NAME'.\n"

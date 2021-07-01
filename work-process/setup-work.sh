@@ -15,6 +15,9 @@ then
       exit 1
 fi
 
+LOWER_PROJECT_NAME=${PROJECT_NAME,,}
+LOWER_DASH_PROJECT_NAME=${LOWER_PROJECT_NAME// /_}
+
 printf "Setting up new work project for '$PROJECT_NAME'."
 
 printf "\n\nCreate new Trello list in the 'Work' board with the name 'To Do - $PROJECT_NAME'.\n"
@@ -23,13 +26,13 @@ read -s -p "Press Enter when complete."
 printf "\n\nCreate new Evernote / Tusk notebook in the 'work' stack with the name '$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nCreate new Dropbox folder with the name '$PROJECT_NAME' in the 'work' folder.\n"
+printf "\n\nCreate new Dropbox folder with the name '$LOWER_DASH_PROJECT_NAME' in the 'work' folder.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nCreate new Bitwarden folder with the name 'work-$PROJECT_NAME'.\n"
+printf "\n\nCreate new Bitwarden folder with the name 'work-$LOWER_DASH_PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nCreate new folder on personal machine with the name '$PROJECT_NAME' in /home/git/work.\n"
+printf "\n\nCreate new folder on personal machine with the name '$LOWER_DASH_PROJECT_NAME' in /home/git/work.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nCreate firefox profile with the name '$PROJECT_NAME'.\n"
