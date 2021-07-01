@@ -29,7 +29,7 @@ read -s -p "Press Enter when complete."
 printf "\n\nCreate new Bitwarden folder with the name 'work-$PROJECT_NAME'.\n"
 read -s -p "Press Enter when complete."
 
-printf "\n\nCreate new folder on personal machine with the name '$PROJECT_NAME' in /home/work.\n"
+printf "\n\nCreate new folder on personal machine with the name '$PROJECT_NAME' in /home/git/work.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nCreate firefox profile with the name '$PROJECT_NAME'.\n"
