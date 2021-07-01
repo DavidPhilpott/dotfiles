@@ -35,7 +35,7 @@ read -s -p "Press Enter when complete."
 printf "\n\nMove folder on personal machine with the name '$lower_dash_project_name' from ~/git/work to ~/git/archived/work/.\n"
 mv -i $HOME/git/work/$lower_dash_project_name $HOME/git/archived/work/
 
-printf "\n\nDelete firefox profile with the name '$project_name'.\n"
+printf "\nDelete firefox profile with the name '$project_name'.\n"
 read -s -p "Press Enter when complete."
 
 printf "\n\nRemove personal shell config content relating to '$project_name'.\n"
