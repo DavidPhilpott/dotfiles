@@ -34,6 +34,7 @@ apps:
 	brew install --cask iterm2
 	brew install --cask meld
 	brew install thefuck
+	brew tap homebrew/cask-fonts && brew cask install font-fira-code-nerd-font
 
 setup_python:
 	python3 -m pip install --user --upgrade setuptools
@@ -43,4 +44,5 @@ zsh:
 	curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+	git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 	cp ./.zshrc > ~/.zshrc
