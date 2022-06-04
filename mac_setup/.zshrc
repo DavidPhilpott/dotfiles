@@ -11,7 +11,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/david/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -118,9 +118,6 @@ alias ls='colorls -AX --dark --group-directories-first' #print normal color ls i
 alias ll='colorls -AlX --dark --group-directories-first' #print long color ls in nice format with all files 
 alias ve='python3 -m venv ./.venv' #create python venv in directory
 alias va='source ./.venv/bin/activate' #active python venv
-alias bonsai='bonsai -li --wait 5 --time 0.05'
-alias gpumine='ethminer -P stratum://0x7d0E7739B25B91a56ED2A823B4A17d99c6F7b7d6.worker1@eu1.ethermine.org:4444' # GPU ETH mining
-alias cpumine='sudo xmrig -o pool.minexmr.com:443 -u 48pHPyYp9gyiT47PS1HVmDCWZWcNKSzW9VbL2KQKqyHsYgHsGphujXN2jSDTz7mJvDjbQUYLytvDAcKBdJBSKF4rCAcrP3M -k --tls --rig-id Worker1' # CPU Monero mining
 eval $(thefuck --alias)
 alias purify-docker='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker system prune -a && docker volume rm $(docker volume ls -q)'
 
@@ -216,7 +213,7 @@ bindkey '\eOB' down-line-or-beginning-search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # - Ruby/Gems -
-export PATH="/home/david/.gem/ruby/2.7.0/bin:$PATH"
+export PATH="~/.gem/ruby/2.7.0/bin:$PATH"
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 # - Python -
