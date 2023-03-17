@@ -1,4 +1,4 @@
-all:  temp_dirs directories brew apps setup_python zsh remove_temp_dir
+all:  directories brew apps setup_python zsh
 
 directories:
 	mkdir ~/temp || echo "dir 'temp' exists"
@@ -12,13 +12,10 @@ brew:
 	sudo chown -R ${USER} /usr/local/*
 
 apps:
-	brew install gpg
-	brew upgrade gnupg 
 	brew install git
 	brew install --cask slack
-	brew install jq
 	brew install docker
-	brew install python@3.10
+	brew install python@3.11
 	brew install pyenv
 	brew install --cask snowflake-snowsql
 	brew install awscli
@@ -33,8 +30,12 @@ apps:
 	brew install --cask firefox
 	brew install --cask iterm2
 	brew install --cask meld
+	brew install --cask barrier
+	brew install --cask dropbox
+	brew install ruby
 	brew install thefuck
-	brew tap homebrew/cask-fonts && brew cask install font-fira-code-nerd-font
+	brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font
+	brew tap homebrew/cask-fonts && brew install --cask font-dejavu-sans-mono-nerd-font
 
 setup_python:
 	python3 -m pip install --user --upgrade setuptools
